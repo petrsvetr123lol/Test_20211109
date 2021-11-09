@@ -50,7 +50,11 @@ namespace Test_20211109
             {
                 MessageBox.Show($"Tvoje platba převyšuje maximální limit {LimitPlatba}, nezaplatím nic.");
             }
-            else if (castka <= LimitPlatba && castka <= Stav)
+            else if (castka > Stav)
+            {
+                MessageBox.Show($"Není dostatek peněz na účtě.");
+            }
+            else if (castka <= LimitPlatba)
             {
                 Stav -= castka;
                 MessageBox.Show($"Platba v hodnotě {castka} byla zaplacena. Na účtě zůstalo {Stav}");
