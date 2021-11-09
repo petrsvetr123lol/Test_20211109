@@ -26,7 +26,7 @@ namespace Test_20211109
             {
                 MessageBox.Show("Tato částka přesahuje možnost maximálního vkladu");
             }
-            else if (castka < LimitVklad)
+            else if (castka <= LimitVklad)
             {
                 Stav += castka;
                 MessageBox.Show($"Byla připsána částka {castka} a máš {Stav}");
@@ -34,11 +34,11 @@ namespace Test_20211109
         }
         public void Vyber(int castka)
         {
-            if (castka > Stav)
+            if (castka > Stav )
             {
                 MessageBox.Show($"Tolik peněž nemůžeš dostat, protože tolik peněž nemáš. Aktuálně máš {Stav}");
             }
-            else if (castka < Stav && castka != 0)
+            else if (castka <= Stav && castka != 0)
             {
                 Stav -= castka;
                 MessageBox.Show($"Vybral jsi {castka} peněz a zbylo ti {Stav}");
@@ -46,7 +46,7 @@ namespace Test_20211109
         }
         public void Platba(int castka)
         {
-            if (castka >= LimitPlatba && castka == 0)
+            if (castka >= LimitPlatba)
             {
                 MessageBox.Show($"Tvoje platba převyšuje maximální limit {LimitPlatba}, nezaplatím nic.");
             }
