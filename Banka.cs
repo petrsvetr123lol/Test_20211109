@@ -46,7 +46,7 @@ namespace Test_20211109
         }
         public void Platba(int castka)
         {
-            if (castka >= LimitPlatba)
+            if (castka > LimitPlatba)
             {
                 MessageBox.Show($"Tvoje platba převyšuje maximální limit {LimitPlatba}, nezaplatím nic.");
             }

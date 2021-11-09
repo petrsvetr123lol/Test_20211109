@@ -38,9 +38,6 @@
             this.label_limit_vklad = new System.Windows.Forms.Label();
             this.label_limit_platba = new System.Windows.Forms.Label();
             this.label_stav = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textbox_castka
@@ -56,9 +53,9 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(25, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 32);
+            this.label1.Size = new System.Drawing.Size(239, 32);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Banka";
+            this.label1.Text = "Banka u Petra Filipa";
             // 
             // label2
             // 
@@ -71,6 +68,7 @@
             // 
             // button_vklad
             // 
+            this.button_vklad.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_vklad.Location = new System.Drawing.Point(34, 193);
             this.button_vklad.Name = "button_vklad";
             this.button_vklad.Size = new System.Drawing.Size(75, 23);
@@ -91,7 +89,8 @@
             // 
             // button_vyber
             // 
-            this.button_vyber.Location = new System.Drawing.Point(126, 193);
+            this.button_vyber.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button_vyber.Location = new System.Drawing.Point(115, 193);
             this.button_vyber.Name = "button_vyber";
             this.button_vyber.Size = new System.Drawing.Size(75, 23);
             this.button_vyber.TabIndex = 3;
@@ -101,7 +100,8 @@
             // 
             // button_platba
             // 
-            this.button_platba.Location = new System.Drawing.Point(219, 193);
+            this.button_platba.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button_platba.Location = new System.Drawing.Point(196, 193);
             this.button_platba.Name = "button_platba";
             this.button_platba.Size = new System.Drawing.Size(75, 23);
             this.button_platba.TabIndex = 3;
@@ -139,35 +139,11 @@
             this.label_stav.Text = "Stav konta";
             this.label_stav.Click += new System.EventHandler(this.label_stav_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(116, 263);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 5;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(116, 293);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
-            this.textBox2.TabIndex = 5;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(116, 323);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 23);
-            this.textBox3.TabIndex = 5;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(361, 450);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(339, 450);
             this.Controls.Add(this.label_stav);
             this.Controls.Add(this.label_limit_platba);
             this.Controls.Add(this.label_limit_vklad);
@@ -178,7 +154,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textbox_castka);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(355, 489);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(355, 489);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Banka";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -198,9 +179,6 @@
         private System.Windows.Forms.Label label_limit_vklad;
         private System.Windows.Forms.Label label_limit_platba;
         private System.Windows.Forms.Label label_stav;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
     }
 }
 

@@ -12,6 +12,7 @@ namespace Test_20211109
 {
     public partial class Form1 : Form
     {
+        
         Banka banka;
         public Form1()
         {
@@ -20,6 +21,7 @@ namespace Test_20211109
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //na zadávání limitů a jmen uživatelem jsem pracoval, akorát to úplně nestíhám. Dojedu to doma :)) 
            banka = new Banka("Pavel Kratochvíl", 200000, 15000);
            label_jmeno.Text = banka.Jmeno;
             label_limit_platba.Text = "Limit pro platbu je " + banka.LimitPlatba.ToString();
