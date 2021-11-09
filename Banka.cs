@@ -9,9 +9,9 @@ namespace Test_20211109
     public class Banka
     {
         public string Jmeno;
-        public int LimitVklad;
-        public int LimitPlatba;
-        public int Stav = 0;
+        public float LimitVklad;
+        public float LimitPlatba;
+        public float Stav = 0;
 
         public Banka(string jmeno, int limit_vklad, int limit_platba)
         {
@@ -22,13 +22,20 @@ namespace Test_20211109
 
         public void Vklad(int castka)
         {
-
+            if (castka > LimitVklad)
+            {
+                MessageBox.Show("Tato částka přesahuje možnost maximálního vkladu");
+            }
+            else if (castka < LimitVklad)
+            {
+                Stav += castka;
+                MessageBox.Show($"Byla připsána částka {Stav}");
+            }
         }
-        public void Vyber()
+        public void Vyber(int castka)
         {
-
         }
-        public void Platba()
+        public void Platba(int castka)
         {
 
         }

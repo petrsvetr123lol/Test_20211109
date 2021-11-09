@@ -32,9 +32,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button_vklad = new System.Windows.Forms.Button();
-            this.label_stav = new System.Windows.Forms.Label();
+            this.label_jmeno = new System.Windows.Forms.Label();
             this.button_vyber = new System.Windows.Forms.Button();
             this.button_platba = new System.Windows.Forms.Button();
+            this.label_limit_vklad = new System.Windows.Forms.Label();
+            this.label_limit_platba = new System.Windows.Forms.Label();
+            this.label_stav = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textbox_castka
@@ -73,14 +76,15 @@
             this.button_vklad.UseVisualStyleBackColor = true;
             this.button_vklad.Click += new System.EventHandler(this.button_vklad_Click);
             // 
-            // label_stav
+            // label_jmeno
             // 
-            this.label_stav.AutoSize = true;
-            this.label_stav.Location = new System.Drawing.Point(38, 266);
-            this.label_stav.Name = "label_stav";
-            this.label_stav.Size = new System.Drawing.Size(38, 15);
-            this.label_stav.TabIndex = 4;
-            this.label_stav.Text = "label3";
+            this.label_jmeno.AutoSize = true;
+            this.label_jmeno.Location = new System.Drawing.Point(38, 266);
+            this.label_jmeno.Name = "label_jmeno";
+            this.label_jmeno.Size = new System.Drawing.Size(38, 15);
+            this.label_jmeno.TabIndex = 4;
+            this.label_jmeno.Text = "label3";
+            this.label_jmeno.Click += new System.EventHandler(this.label_stav_Click);
             // 
             // button_vyber
             // 
@@ -102,14 +106,47 @@
             this.button_platba.UseVisualStyleBackColor = true;
             this.button_platba.Click += new System.EventHandler(this.button_platba_Click);
             // 
+            // label_limit_vklad
+            // 
+            this.label_limit_vklad.AutoSize = true;
+            this.label_limit_vklad.Location = new System.Drawing.Point(38, 293);
+            this.label_limit_vklad.Name = "label_limit_vklad";
+            this.label_limit_vklad.Size = new System.Drawing.Size(38, 15);
+            this.label_limit_vklad.TabIndex = 4;
+            this.label_limit_vklad.Text = "label3";
+            this.label_limit_vklad.Click += new System.EventHandler(this.label_stav_Click);
+            // 
+            // label_limit_platba
+            // 
+            this.label_limit_platba.AutoSize = true;
+            this.label_limit_platba.Location = new System.Drawing.Point(38, 323);
+            this.label_limit_platba.Name = "label_limit_platba";
+            this.label_limit_platba.Size = new System.Drawing.Size(38, 15);
+            this.label_limit_platba.TabIndex = 4;
+            this.label_limit_platba.Text = "label4";
+            this.label_limit_platba.Click += new System.EventHandler(this.label_stav_Click);
+            // 
+            // label_stav
+            // 
+            this.label_stav.AutoSize = true;
+            this.label_stav.Location = new System.Drawing.Point(38, 355);
+            this.label_stav.Name = "label_stav";
+            this.label_stav.Size = new System.Drawing.Size(62, 15);
+            this.label_stav.TabIndex = 4;
+            this.label_stav.Text = "Stav konta";
+            this.label_stav.Click += new System.EventHandler(this.label_stav_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(322, 450);
+            this.Controls.Add(this.label_stav);
+            this.Controls.Add(this.label_limit_platba);
+            this.Controls.Add(this.label_limit_vklad);
             this.Controls.Add(this.button_platba);
             this.Controls.Add(this.button_vyber);
-            this.Controls.Add(this.label_stav);
+            this.Controls.Add(this.label_jmeno);
             this.Controls.Add(this.button_vklad);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -128,9 +165,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button_vklad;
-        private System.Windows.Forms.Label label_stav;
+        private System.Windows.Forms.Label label_jmeno;
         private System.Windows.Forms.Button button_vyber;
         private System.Windows.Forms.Button button_platba;
+        private System.Windows.Forms.Label label_limit_vklad;
+        private System.Windows.Forms.Label label_limit_platba;
+        private System.Windows.Forms.Label label_stav;
     }
 }
 
