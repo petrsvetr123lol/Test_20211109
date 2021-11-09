@@ -50,6 +50,8 @@ namespace Test_20211109
             {
             int castka = int.Parse(textbox_castka.Text);
             banka.Vyber(castka);
+            label_stav.Text = "Aktuální stav účtu je " + banka.Stav.ToString();
+
             }
             catch
             {
@@ -65,6 +67,8 @@ namespace Test_20211109
             {
             int castka = int.Parse(textbox_castka.Text);
             banka.Platba(castka);
+            label_stav.Text = "Aktuální stav účtu je " + banka.Stav.ToString();
+
             }
             catch
             {
