@@ -71,6 +71,7 @@
             this.button_vklad.TabIndex = 3;
             this.button_vklad.Text = "Vklad";
             this.button_vklad.UseVisualStyleBackColor = true;
+            this.button_vklad.Click += new System.EventHandler(this.button_vklad_Click);
             // 
             // label_stav
             // 
@@ -89,6 +90,7 @@
             this.button_vyber.TabIndex = 3;
             this.button_vyber.Text = "Výběr";
             this.button_vyber.UseVisualStyleBackColor = true;
+            this.button_vyber.Click += new System.EventHandler(this.button_vyber_Click);
             // 
             // button_platba
             // 
@@ -98,6 +100,7 @@
             this.button_platba.TabIndex = 3;
             this.button_platba.Text = "Platba";
             this.button_platba.UseVisualStyleBackColor = true;
+            this.button_platba.Click += new System.EventHandler(this.button_platba_Click);
             // 
             // Form1
             // 
@@ -113,6 +116,7 @@
             this.Controls.Add(this.textbox_castka);
             this.Name = "Form1";
             this.Text = "Banka";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
